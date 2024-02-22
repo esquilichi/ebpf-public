@@ -15,7 +15,5 @@ cd bpftool/src/
 make
 sudo make install
 
-cd $HOME
 
-sudo ln -s $HOME/bpftool/libbpf/src/libbpf.so.1.4.0 /lib/x86_64-linux-gnu/libbpf.so.1
 

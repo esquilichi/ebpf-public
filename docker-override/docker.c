@@ -46,14 +46,6 @@ int main(void) {
         fprintf(stderr, "Failed to load BPF program: %s\n", strerror(-err));
         goto cleanup;
     }
-    /* uprobe/uretprobe expects relative offset of the function to attach
-	 * to. libbpf will automatically find the offset for us if we provide the
-	 * function name. If the function name is not specified, libbpf will try
-	 * to use the function offset instead.
-    * we can also attach uprobe/uretprobe to any existing or future
-	 * processes that use the same binary executable; to do that we need
-	 * to specify -1 as PID, as we do here
-	 */
 
     // Esta función no está completa, busca que función interesa hookear, la ruta te la doy como pista
     // A los primeros os doy una pegatina
